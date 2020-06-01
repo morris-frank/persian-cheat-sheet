@@ -10,12 +10,43 @@
 	headsep=0.5cm,
 }
 \usepackage{multicol}
+\usepackage{tabularx}
 
 \usepackage{xepersian}
-\settextfont[Scale=2]{Amiri}
+\settextfont[Scale=4]{Scheherazade} % Alternative: FiraGO
+\setlatintextfont[Scale=1.2]{Fira Sans}
+
+\newcommand\ه{\hline}
 
 \begin{document}
-    \begin{tabular}
-        من & تو
-    \end{tabular}
+
+\begin{multicols}{3}
+	\section*{\lr{Personal suffix}}
+	\begin{tabularx}{\columnwidth}{XX}
+	\\-م & -یم
+	\\-ی & -ید
+	\\-د & -ند
+    \end{tabularx}
+    
+    \section*{\lr{Possessive suffix}}
+    \begin{tabularx}{\columnwidth}{XX}
+    \\-م & -مان
+    \\-ت & -تان
+    \\-ش & -شان
+    \end{tabularx}
+    
+    \section*{\lr{Personal pronouns}}
+    \begin{tabularx}{\columnwidth}{XX}
+    \\من & ما
+    \\تو & شما
+    \\او & آنها
+    \end{tabularx}
+    
+    \section*{\lr{Demonstratives}}
+    \begin{tabularx}{\columnwidth}{XX}
+    \\آن & این
+    \\آنها &
+    \end{tabularx}
+\end{multicols}
+
 \end{document}
