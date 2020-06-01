@@ -11,6 +11,7 @@
 }
 \usepackage{multicol}
 \usepackage{tabularx}
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
 
 \usepackage{xepersian}
 \settextfont[Scale=4]{Scheherazade} % Alternative: FiraGO
@@ -22,30 +23,30 @@
 
 \begin{multicols}{3}
 	\section*{\lr{Personal suffix}}
-	\begin{tabularx}{\columnwidth}{XX}
-	\\-م & -یم
-	\\-ی & -ید
-	\\-د & -ند
+	\begin{tabularx}{\columnwidth}{Y|Y}
+	-م & -یم\\
+	-ی & -ید\\
+	-د & -ند
     \end{tabularx}
     
     \section*{\lr{Possessive suffix}}
-    \begin{tabularx}{\columnwidth}{XX}
-    \\-م & -مان
-    \\-ت & -تان
-    \\-ش & -شان
+    \begin{tabularx}{\columnwidth}{Y|Y}
+	-م & -مان\\
+    -ت & -تان\\
+    -ش & -شان
     \end{tabularx}
     
     \section*{\lr{Personal pronouns}}
-    \begin{tabularx}{\columnwidth}{XX}
-    \\من & ما
-    \\تو & شما
-    \\او & آنها
+    \begin{tabularx}{\columnwidth}{Y|Y}
+	من & ما\\
+    	تو & شما\\
+    	او & آنها
     \end{tabularx}
     
     \section*{\lr{Demonstratives}}
-    \begin{tabularx}{\columnwidth}{XX}
-    \\آن & این
-    \\آنها &
+    \begin{tabularx}{\columnwidth}{Y|Y}
+   	آن & این\\
+    	آنها &\\
     \end{tabularx}
 \end{multicols}
 
